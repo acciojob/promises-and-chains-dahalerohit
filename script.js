@@ -7,7 +7,7 @@ event.preventDefault();
  let agvalue = ages.value;
  let navalue = names.value;
 if(agvalue == "" && navalue == ""){
-  alert("Please enter valid details."); 
+window.alert("Please enter valid details."); 
 }
 
 let P = new Promise((resolve,reject) =>{
@@ -24,11 +24,11 @@ let P = new Promise((resolve,reject) =>{
 });
 
 P.then((r) => {
- alert(r);
+ window.alert(r);
 
 }).catch((e) =>{
 
-alert(e);
+window.alert(e);
 });
 
 })
