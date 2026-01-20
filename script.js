@@ -13,10 +13,10 @@ alert("Please enter valid details");
 let P = new Promise((resolve,reject) =>{
  setTimeout(() =>{
   if(agvalue>18){
-    resolve("Welcome" + navalue + "  You can vote");
+    resolve("Welcome," + navalue + "  You can vote");
   }
   else{
-    reject("Oh sorry" + navalue + " You aren't old enough");
+    reject("Oh sorry" + navalue + ". You aren't old enough");
   }
  }, 4000);
 
